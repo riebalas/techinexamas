@@ -12,7 +12,7 @@ public class BaseTest {
     @BeforeEach
     public void setUp() {
         driver = new ChromeDriver();
-        driver.get("http://localhost:8080/prisijungti");
+        driver.get("http://localhost:8080/");
     }
 
     @AfterEach

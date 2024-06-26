@@ -61,11 +61,11 @@ public class CalculatorSubtractTest {
     private void performCalculation() {
         WebElement firstNumberField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("sk1")));
         firstNumberField.clear();
-        firstNumberField.sendKeys("------8");
+        firstNumberField.sendKeys("+36");
 
         WebElement secondNumberField = driver.findElement(By.id("sk2"));
         secondNumberField.clear();
-        secondNumberField.sendKeys("----5");
+        secondNumberField.sendKeys("+96");
 
         WebElement operationSelect = driver.findElement(By.name("zenklas"));
         Select select = new Select(operationSelect);

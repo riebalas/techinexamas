@@ -60,11 +60,11 @@ public class CalculatorMultiplyTest {
     private void performCalculation() {
         WebElement firstNumberField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("sk1")));
         firstNumberField.clear();
-        firstNumberField.sendKeys("--1");
+        firstNumberField.sendKeys("+1");
 
         WebElement secondNumberField = driver.findElement(By.id("sk2"));
         secondNumberField.clear();
-        secondNumberField.sendKeys("sss");
+        secondNumberField.sendKeys("+2");
 
         WebElement operationSelect = driver.findElement(By.name("zenklas"));
         Select select = new Select(operationSelect);
